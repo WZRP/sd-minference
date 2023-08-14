@@ -112,7 +112,6 @@ if os.path.isfile(args["input"]):
 
     print(f"Size detected and reduced from {image.width}x{image.height} to {downscale.width}x{downscale.height} in {round(time.time()*1000)-start} milliseconds")
 
-    scale = max(hf, vf)
     output = downscale
 
     if args["palette"]:
